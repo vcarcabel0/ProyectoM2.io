@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio Sesión | </title>
+</head>
+<body>
+    <div class="container-form sign-up">
+        <div class="bienvenida">
+            <div class="mensaje">
+                <h2>Bienvenido a ...</h2>
+                <p>Si ya tienes una cuenta inicia sesion aqui</p>
+                <button class="sign-up-btn">Iniciar Sesion</button>
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="crear-cuenta">Crear una cuenta</h2>
+            <div class="icons">
+                <div class="border-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="border-icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="border-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="border-icon">
+                    <i class="fa-solid fa-at"></i>
+                </div>
+            </div>
+            <p class="crear-cuenta-g">Crea una cuenta gratis</p>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <button>Registrarse</button>
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="crear-cuenta">Iniciar sesion</h2>
+            <div class="icons">
+                <div class="border-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="border-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="border-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="border-icon">
+                    <i class="fa-solid fa-at"></i>
+                </div>
+            </div>
+            <p class="crear-cuenta">¿Aun no tienes una cuenta?</p>
+            <input type="text" id="usuario" placeholder="Nombre">
+            <input type="password" id="contraseña" placeholder="Contraseña">
+            <button onclick="acceder()">Acceder</button>
+        </form>
+        <div class="bienvenida">
+            <div class="mensaje">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta registrese</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/869eb9e89e.js" crossorigin="anonymous"></script>
+</body>
+</html>
