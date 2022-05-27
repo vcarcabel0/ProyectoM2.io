@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="media/logo.png">
+    <script src="https://kit.fontawesome.com/d76928205d.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pag.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="">
+        <nav class="navbar navbar-inverse navbar-fixed-top m-0">
+          <div class="container-fluid">
+            <div class="navbar-header col-12 d-flex justify-content-between ">
+              <div class="d-flex flex-row align-items-center">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <img src="media/logo.png" class="navbar-brand logo " alt="">
+                <input type="search" class="">
+              </div>
+    
+              <div class="d-flex flex-column justify-content-center">
+                <div class="d-flex">
+                  <div class="dropdown me-1">
+                    <button type="button" class="btn dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                      <li class="d-flex align-items-center ms-5"><i class="fa-2x fas fa-user me-5 text-black"></i><a href="#" id="mostrar"></a></li>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                      <li><a class="dropdown-item" href="#">Perfil</a></li>
+                      <li><a class="dropdown-item" href="#">Carrito</a></li>
+                      <li><a class="dropdown-item" href="#">Intereses</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-auto">
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav d-flex flex-row">
+                  <li><a href="#carouselExampleInterval">Inicio</a></li>
+                  <li><a href="#section2">Publicaciones</a></li>
+                  <li><a href="#section3">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>    
+      </header>
+
+      <!--Hero-->
+      
+      <section id="hero">
+        <h1 class="">TUKI TUKI<br>TUKI</h1>
+        <p class="p-5 text-light fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit velit repudiandae, ipsam error amet laboriosam ducimus consequuntur adipisci, modi minima provident. Nemo, voluptas corrupti. Ducimus repellendus ipsam saepe reiciendis quos.</p>
+        <button class="btn btn-dark text-success fs-4 text-center">Contactar</button>
+      </section>
+      
+
+      <!--Mostrar especidico-->
+
+      <!--cardrousel-->
+      <main>
+        <div id="carouselExampleIntervalTop" class="carousel slide my-5" data-bs-ride="carousel">
+          <div class="carousel-inner" id="acaTabla">
+          </div>
+        </div>
+        <!--Informacion - compra-->
+        <div id="mostrarEspecifico"></div>
+        </main>
+  <!--Footer-->
+  <footer class="bg-dark text-center text-success mt-5" id="section3">
+    <div class="container p-4">
+      <section class="mb-4 icons">
+        <div class="container-icons">
+          <div class="border-icon">
+            <!--           <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            </a> -->
+            <i class="fab fa-google"></i>
+          </div>
+          <!-- <a class="btn btn-outline-light btn-floating m-1 border border-success" href="#!" role="button">
+          </a> -->
+          <div class="border-icon">
+            <i class="fab fa-instagram "></i>
+          </div>
+          <!-- <a class="btn btn-outline-light btn-floating m-1 border border-success" href="#!" role="button">
+          </a> -->
+          <div class="border-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+              <p class="pt-2 fs-5">
+                <strong>Envianos mail:</strong>
+              </p>
+            </div>
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label m-2 fs-5" for="form5Example21">Ingresa mail</label>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-outline-success btn-lg mb-4">
+                Enviar
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!--Seccion mas informacion-->
+      <section class="mb-4 text-light fs-5">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+
+      <section class="">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase text-light fs-4">Redes</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-light">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Link 4</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase text-light text-light">Ayuda</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-light">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase text-light text-light">Medios de pago</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-light">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Link 3</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase text-light text-light">Partners</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-light">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Link 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © Creado por Valentin, Franco y Pablo para 
+      <a class="text-success" href="https://matea.social/academia.html#" target="_blank" id="botonLogin">Matea </a>
+      2022
+    </div>
+  </footer>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</body>
+</html>
