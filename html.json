@@ -4,14 +4,14 @@
         "id":1,
         "img":"./media/imagen1.jpg",
         "nombre":"Mirta legrand y su historia"  ,
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque et recusandae." ,
-        "fecha" :"30/05/2022" ,
+        "descripcion":"Habia una vez, hace mucho tiempo, si queres mas info compra la entrada." ,
+        "fecha" :"30/05/2023" ,
         "Lugar":" Auditorio" ,
         "disponible": [5, 16, 70, 0],
         "precio" : [1500, 1000, 800, 600] ,
-        "evento" : "bibliografia"  ,
+        "evento" : "Teatral"  ,
         "Local" : "Auditorio Adela Reta" ,
-        "Duracion" : "120 minutos",
+        "Duracion" : 120,
         "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 }
 ,
@@ -20,13 +20,13 @@
     "img":"./media/imagen2.jpg",
     "nombre":"Maluma"  ,
     "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque et recusandae." ,
-    "fecha" :"31/05/2022" ,
+    "fecha" :"31/06/2022" ,
     "Lugar":"Teatro" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
     "evento" : "Musica " ,
     "Local" : "Teatro de Verano" ,
-    "Duracion" : "240 minutos",
+    "Duracion" : 240,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 }
 ,
@@ -36,13 +36,13 @@
     "img":"./media/imagen3.jpg",
     "nombre":"Clasico del futbol uruguayo"  ,
     "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque et recusandae." ,
-    "fecha" :"5/06/2022" ,
+    "fecha" :"05/07/2022" ,
     "Lugar":"Estadio" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
-    "evento" : "futbol"  ,
-    "Local" : "Gran Parque Central" ,
-    "Duracion" : "120 minutos",
+    "evento" : "Deportivo"  ,
+    "Local" : "Estadio Centernario" ,
+    "Duracion" : 120,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 
 
@@ -61,8 +61,8 @@
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
     "evento" : "Musica"  ,
-    "Local" : "Velodromo" ,
-    "Duracion" : "60 minutos",
+    "Local" : "Teatro de Verano" ,
+    "Duracion" : 60,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 
 }
@@ -73,13 +73,13 @@
     "img":"./media/imagen5.jpg",
     "nombre":"Defie de chip paricien"  ,
     "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque et recusandae." ,
-    "fecha" :"28/2/2022" ,
+    "fecha" :"28/08/2022" ,
     "Lugar":"Palacio" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
     "evento" : "Moda"  ,
     "Local" : "Radisoon" ,
-    "Duracion" : "90 minutos",
+    "Duracion" : 90,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 
 
@@ -97,8 +97,8 @@
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
     "evento" : "Infantil"  ,
-    "Local" : "Estadio Centenario" ,
-    "Duracion" : "45 minutos",
+    "Local" : "Teatro Solis" ,
+    "Duracion" : 45,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"]
 },
 {
@@ -111,9 +111,9 @@
     "Lugar":"Palacio" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
-    "evento" : "LUB" ,
-    "Local" : "Palacio Peñarol" ,
-    "Duracion" : "120 minutos",
+    "evento" : "Deportivo" ,
+    "Local" : "Verdirrojo" ,
+    "Duracion" : 120,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"]
 
 
@@ -130,9 +130,9 @@
     "Lugar":"Cine" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
-    "evento" : " Gran estreno"  ,
+    "evento" : "Peliculas"  ,
     "Local" : "Grupo Cine" ,
-    "Duracion" : "90 minutos",
+    "Duracion" : 90,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 
 },
@@ -142,13 +142,13 @@
     "img":"./media/imagen9.jpg",
     "nombre":"Elegante"  ,
     "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque et recusandae." ,
-    "fecha" :"8/12/2022" ,
+    "fecha" :"08/12/2022" ,
     "Lugar":"Teatro" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
     "evento" : "Musica"  ,
     "Local" : "Teatro de verano" ,
-    "Duracion" : "30 minutos",
+    "Duracion" : 30,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 
 },
@@ -159,12 +159,12 @@
     "nombre":"Soy luna"  ,
     "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque et recusandae." ,
     "fecha" :"11/11/2022" ,
-    "Lugar":"Arena" ,
+    "Lugar":"" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
-    "evento" : "Comedia Musical"  ,
-    "Local" : "Antel Arena" ,
-    "Duracion" : "90 minutos",
+    "evento" : "Teatral"  ,
+    "Local" : "Auditorio Adela Reta" ,
+    "Duracion" : 90,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"]
 
 
@@ -181,9 +181,9 @@
     "Lugar":"Estadio" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
-    "evento" : "Musical"  ,
-    "Local" : "Estadio Campeon del Siglo" ,
-    "Duracion" : "180 minutos",
+    "evento" : "Musica"  ,
+    "Local" : "Teatro de Verano" ,
+    "Duracion" : 180,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 
 
@@ -196,13 +196,13 @@
     "img":"./media/imagen12.jpg",
     "nombre":"La divina comedia"  ,
     "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque et recusandae." ,
-    "fecha" :"15/06/2022" ,
+    "fecha" :"15/05/2023" ,
     "Lugar":"Teatro" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
-    "evento" : "Obra teatral"  ,
-    "Local" : "Teatro solis" ,
-    "Duracion" : "60 minutos",
+    "evento" : "Teatral"  ,
+    "Local" : "Teatro Solis" ,
+    "Duracion" : 60,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 
 
@@ -223,7 +223,7 @@
     "precio" : [1500, 1000, 800, 600] ,
     "evento" : "Danza"  ,
     "Local" : "Sodre" ,
-    "Duracion" : "45 minutos",
+    "Duracion" : 45,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 
 
@@ -236,13 +236,13 @@
     "img":"./media/imagen14.jpg",
     "nombre":"Romeo y julieta"  ,
     "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque et recusandae." ,
-    "fecha" :"23/09/2022" ,
+    "fecha" :"23/01/2023" ,
     "Lugar":"Teatro" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
     "evento" : "Teatral"  ,
-    "Local" : "Sala Verdi" ,
-    "Duracion" : "60 minutos",
+    "Local" : "Teatro Solis" ,
+    "Duracion" : 60,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 
 
@@ -260,9 +260,9 @@
     "Lugar":"Teatro" ,
     "disponible": [5, 16, 70, 200],
     "precio" : [1500, 1000, 800, 600] ,
-    "evento" : "show drag"  ,
-    "Local" : "Viajeros" ,
-    "Duracion" : "60 minutos",
+    "evento" : "Teatral"  ,
+    "Local" : "Teatro de Verano" ,
+    "Duracion" : 60,
     "Salas" : ["Palco VIP", "Premiun", "Mediana", "Economica"] 
 
 

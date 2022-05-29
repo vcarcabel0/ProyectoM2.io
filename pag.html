@@ -51,6 +51,7 @@
                       <li><a class="dropdown-item" href="#">Perfil</a></li>
                       <li><a class="dropdown-item" href="#">Carrito</a></li>
                       <li><a class="dropdown-item" href="#">Intereses</a></li>
+                      <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item text-danger" href="pag.html" id="cerrarS">Cerrar sesion</a></li>
                     </ul>
                   </div>
@@ -60,8 +61,8 @@
             <div class="m-auto">
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav d-flex flex-row">
-                  <li><a href="#carouselExampleInterval"><button class="btn btn-outline-success btn-sm">Inicio</button></a></li>
-                  <li><a href="#section2"><button class="btn btn-outline-success btn-sm">Publicaciones</button></a></li>
+                  <li><a href="#hero"><button class="btn btn-outline-success btn-sm">Inicio</button></a></li>
+                  <li><a href="#publicaciones"><button class="btn btn-outline-success btn-sm">Publicaciones</button></a></li>
                   <li><a href="#section3"><button class="btn btn-outline-success btn-sm">Contacto</button></a></li>
                 </ul>
               </div>
@@ -79,7 +80,6 @@
       </section>
       
 
-      <!--Mostrar especidico-->
 
       <!--cardrousel-->
       <main>
@@ -88,12 +88,91 @@
           </div>
         </div>
         <!--Informacion - compra-->
-        <div id="mostrarEspecifico"></div>
-        <div class="container-luid" id="eventos">
+        <div id="mostrarEspecifico" class="mb-5"></div>
+        <div id="publicaciones" class="col-12 mt-5">
+          <h2 class="mt-5 text-center fs-1 p-3  text-white mb-3" >Publicaciones:</h2>
+        </div>
+        <div class="container-fluid">
+          <div class="row mb-5 justify-content-center navbar bg-success">
+            <div class="col-1">
+              <div>
+                <select name="cars" id="event" class="form-select form-select-lg bg-success" aria-label=".form-select-lg example">
+                  <option value="0" selected class="bg-success">Evento</option>
+                  <option value="Musica" class="bg-light">Musica</option>
+                  <option value="Moda" class="bg-light">Moda</option>
+                  <option value="Infantil" class="bg-light">Infantil</option>
+                  <option value="Deportivo" class="bg-light">Deportivo</option>
+                  <option value="Peliculas" class="bg-light">Peliculas</option>
+                  <option value="Teatral" class="bg-light">Teatral</option>
+                  <option value="Danza" class="bg-light">Danza</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-1">
+              <div>
+                <select name="cars" id="local" class="form-select form-select-lg bg-success" aria-label=".form-select-lg example">
+                  <option value="0" selected class="bg-success">Local</option>
+                  <option value="Auditorio Adela Reta" class="bg-light">Auditorio Adela Reta</option>
+                  <option value="Teatro de Verano" class="bg-light">Teatro de Verano</option>
+                  <option value="Estadio Centenario" class="bg-light">Estadio Centenario</option>
+                  <option value="Radisson" class="bg-light">Radisson</option>
+                  <option value="Teatro Solis" class="bg-light">Teatro Solis</option>
+                  <option value="Verdirrojo" class="bg-light">Verdirrojo</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-1">
+              <div>
+                <select name="cars" id="fecha" class="form-select form-select-lg bg-success" aria-label=".form-select-lg example">
+                  <option value="0" selected class="bg-success">Fecha</option>
+                  <option value="01" class="bg-light">Enero 2023</option>
+                  <option value="02" class="bg-light">Febrero 2023</option>
+                  <option value="03" class="bg-light">Marzo 2023</option>
+                  <option value="04" class="bg-light">Abril 2023</option>
+                  <option value="05" class="bg-light">Mayo 2023</option>
+                  <option value="06" class="bg-light">Junio 2022</option>
+                  <option value="07" class="bg-light">Julio 2022</option>
+                  <option value="08" class="bg-light">Agosto 2022</option>
+                  <option value="09" class="bg-light">Septiembre 2022</option>
+                  <option value="10" class="bg-light">Octubre 2022</option>
+                  <option value="11" class="bg-light">Noviembre 2022</option>
+                  <option value="12" class="bg-light">Diciembre 2022</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-1">
+              <div>
+                <select name="cars" id="duracion" class="form-select form-select-lg bg-success" aria-label=".form-select-lg example">
+                  <option value="0" selected class="bg-success">Duracion</option>
+                  <option value="60" class="bg-light">1 hora o menos</option>
+                  <option value="60." class="bg-light">Mas de 1 hora</option>
+                  <option value="120" class="bg-light">2 horas o menos</option>
+                  <option value="120." class="bg-light">Mas de 2 horas</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-3"><!-- Example single danger button -->
+              <div class="btn-group w-100 h-50">
+                <div class="container-fluid ">
+                  <div class="d-flex w-100 " role="search">
+                    <input class="form-control me-2 border-0 py-0" type="search" placeholder="Search" aria-label="Search" id="search">
+                    <button class="btn btn-outline-dark text-white" type="submit" id="busquedaCombi">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="btn-group w-100 h-100">
+                <button class="btn btn-secondary">Limpiar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid" id="eventos">
           <div class="row">
               <div class="eventos"></div>
           </div>
-      </div> 
+        </div> 
         </main>
         <footer class="bg-dark text-center text-success mt-5" id="section3">
           <div class="container p-4">

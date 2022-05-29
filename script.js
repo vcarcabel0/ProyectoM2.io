@@ -240,6 +240,111 @@ function mostrarInfo(carta){
 
 }
 
+//Busquedas combinadas
+let busquedaCombi = document.getElementById("busquedaCombi");
+busquedaCombi.addEventListener("click", function (){
+  mostrarEventos(buscarTodo())
+})
+
+let busquedaArreglo = []
+function buscarTodo(){
+  let event = document.getElementById("event").value;
+  let local = document.getElementById('local').value;
+  let fecha = document.getElementById('fecha').value;
+  let duracion = document.getElementById('duracion').value
+  let barraVal = document.getElementById('search').value;
+  busquedaArreglo.push(event, local, fecha, duracion, barraVal)
+  console.log(busquedaArreglo);
+  let coincidencias = buscarConArreglo(busquedaArreglo)
+
+
+
+  busquedaArreglo = []
+  return coincidencias
+}
+
+function buscarConArreglo(arreglo){
+  let filtrada1 = busquedaEvento(arreglo[0]);
+  let filtrada2 = busquedaLocal(arreglo[1], filtrada1);
+  let filtrada3 = busquedaFecha(arreglo[2], filtrada2);
+  let filtrada4 = busquedaDuracion(arreglo[3], filtrada3);
+  let filtrada5 = busquedaTexto(arreglo[4], filtrada4);
+  return filtrada5
+}
+
+//Busqueda evento
+function busquedaEvento(arregloPos){
+  if (arregloPos == 0) {
+    return eventos
+  } else {
+    let filtrada = eventos.filter(x => (x.evento == arregloPos));
+    return filtrada;
+  }
+}
+
+//Busqueda local
+function busquedaLocal(arregloPos, filtrada){
+  if (arregloPos == 0) {
+    return filtrada
+  } else {
+    let filtradaInterna = filtrada.filter(x => (x.Local == arregloPos));
+    return filtradaInterna;
+  }
+}
+
+//Busqueda fecha
+function busquedaFecha(arregloPos, filtrada){
+  if (arregloPos == 0) {
+    return filtrada
+  } else {
+    let filtradaInterna = filtrada.filter(x => (x.fecha[3] == arregloPos[0])).filter(x => (x.fecha[4] == arregloPos[1]));
+    return filtradaInterna;
+  }
+}
+
+//Busqueda duracion
+
+function busquedaDuracion(arregloPos, filtrada){
+  let filtradaInterna;
+  switch (arregloPos) {
+    case '0':
+      return filtrada;
+    case '60':
+      filtradaInterna = filtrada.filter(x => (x.Duracion <= arregloPos));
+      return filtradaInterna;
+      case '60.':
+        filtradaInterna = filtrada.filter(x => (x.Duracion > arregloPos));
+        return filtradaInterna;
+      case '120':
+        filtradaInterna = filtrada.filter(x => (x.Duracion <= arregloPos));
+        return filtradaInterna;
+      case '120.':
+        filtradaInterna = filtrada.filter(x => (x.Duracion > arregloPos));
+        return filtradaInterna;
+  }
+}
+
+//Busqueda texto
+function busquedaTexto(arregloPos, filtrada){
+  if (arregloPos == 0) {
+    return filtrada
+  } else {
+    let filtradaInterna = filtrada.filter(x => x.nombre.toLowerCase().indexOf(arregloPos.toLowerCase()) > -1) + 
+                          filtrada.filter(x => x.descripcion.toLowerCase().indexOf(arregloPos.toLowerCase()) > -1) ;
+    return filtradaInterna;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 //Cards
 var contenido
 
