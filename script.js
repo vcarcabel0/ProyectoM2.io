@@ -329,8 +329,7 @@ function busquedaTexto(arregloPos, filtrada){
   if (arregloPos == 0) {
     return filtrada
   } else {
-    let filtradaInterna = filtrada.filter(x => x.nombre.toLowerCase().indexOf(arregloPos.toLowerCase()) > -1) + 
-                          filtrada.filter(x => x.descripcion.toLowerCase().indexOf(arregloPos.toLowerCase()) > -1) ;
+    let filtradaInterna = filtrada.filter(x => x.nombre.toLowerCase().indexOf(arregloPos.toLowerCase()) > -1).concat(filtrada.filter(x => x.descripcion.toLowerCase().indexOf(arregloPos.toLowerCase()) > -1)) ;
     return filtradaInterna;
   }
 }
